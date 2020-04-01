@@ -56,7 +56,9 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 // Enter your template code here.
 const injectScript = require('injectScript');
-const url = 'https://plugin.socital.com/static/v1/socital.js?userID=' + data.userID;
+const encodeUriComponent = require('encodeUriComponent');
+
+const url = 'https://plugin.socital.com/static/v1/socital.js?userID=' + encodeUriComponent(data.userID);
 
 
 function onSuccess() {
@@ -68,9 +70,6 @@ function onFailure() {
 }
 
 injectScript(url, onSuccess, onFailure);
-
-// Call data.gtmOnSuccess when the tag is finished.
-data.gtmOnSuccess();
 
 
 ___WEB_PERMISSIONS___
@@ -113,5 +112,3 @@ scenarios: []
 ___NOTES___
 
 Created on 2/25/2020, 5:50:53 PM
-
-
