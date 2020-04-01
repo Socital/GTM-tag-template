@@ -1,5 +1,5 @@
 homepage: "https://socital.com"
 documentation: "https://support.socital.com/index.php/2020/02/25/install-socital-through-google-tag-manager-with-tag-template/"
 versions:
-  - sha: 53e683999274af36a95a014ba728b989138e9145
+  - sha: 29e2d85475b5562a036ac5fa55c4277c600d46ee
     changeNotes: Initial release.
